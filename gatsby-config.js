@@ -1,11 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Hardcoders`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `Laurent Veyrat`,
+    bio: `Passionné de musique, pratique la batterie depuis 15 ans et joue dans le groupe de rock Cat Rodeo.
+               Passionné de développement web et de technologie futuriste :)`,
+    authorImage: `https://media-exp2.licdn.com/dms/image/C5603AQFDW3S7O9tFbg/profile-displayphoto-shrink_200_200/0?e=1584576000&v=beta&t=jycpLEtXrHT6nxF4530ZhGTHPmWhL53mWeFQeLKfyI0`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `blog`, path: `${__dirname}/blog/` },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        modifyVars: require("./src/theme/antd.js"),
+        // Needed to load antdesign less files.
+        javascriptEnabled: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-antd",
+      options: {
+        // Activate less files
+        style: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
