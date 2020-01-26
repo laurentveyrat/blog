@@ -1,7 +1,7 @@
 ---
 slug: pikachu
 date: '2019-02-02'
-title: Pikachu test
+title: Pikachu
 ---
 # Pikachu
 

@@ -39,7 +39,7 @@ const GLayout = ({ children, page }) => {
               </Link>
             </Menu.Item>
             <Menu.Item key="2">
-              <a href="https://hc.rs/youtube">
+              <a href="https://www.youtube.com/watch?v=Kc0uacyvMCQ" target="_blank">
                 <Icon type="video-camera" />
                 <span className="nav-text">Youtube</span>
               </a>
@@ -68,7 +68,7 @@ const GLayout = ({ children, page }) => {
             </div>
           </Content>
           <Footer style={{ textAlign: "center" }}>
-            Hardcoders ©2019 Created by Antho Welc
+            BLOG ©2020 Created by Laurent Veyrat
           </Footer>
         </Layout>
       </Layout>

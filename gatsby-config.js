@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Hardcoders`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `BLOG de Laurent VEYRAT`,
+    description: `BLOG de Laurent VEYRAT, développeur front end javascript react`,
     author: `Laurent Veyrat`,
-    bio: `Passionné de musique, pratique la batterie depuis 15 ans et joue dans le groupe de rock Cat Rodeo.
-               Passionné de développement web et de technologie futuriste :)`,
+    bio: `Passionné de développement web et de technologie futuriste :)`,
     authorImage: `https://media-exp2.licdn.com/dms/image/C5603AQFDW3S7O9tFbg/profile-displayphoto-shrink_200_200/0?e=1584576000&v=beta&t=jycpLEtXrHT6nxF4530ZhGTHPmWhL53mWeFQeLKfyI0`
   },
   plugins: [
